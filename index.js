@@ -1,8 +1,8 @@
 const express = require('express')
-const exphbrs = require('express-handlebars')
+const exphbs = require('express-handlebars')
 
 const app = express();
-const hbs = exphbrs.create({
+const hbs = exphbs.create({
     defaultLayout: 'main',
     extname: 'hbs',
 })
