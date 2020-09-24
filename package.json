@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon nodemon"
+    "dev": "nodemon index.js"
   },
   "author": "Ustimenko Denis",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
     "nodemon": "^2.0.4"
   }
 }
