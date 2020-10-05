@@ -1,8 +1,8 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const homeRoutes = require('./routes/homeRoutes')
-const coursesRoutes = require('./routes/coursesRoutes')
-const addRoutes = require('./routes/addRoutes')
+const homeRoutes = require('./routes/home')
+const coursesRoutes = require('./routes/courses')
+const addRoutes = require('./routes/add')
 
 const app = express();
 const hbs = exphbs.create({
