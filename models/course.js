@@ -1,12 +1,12 @@
 const fs = require('fs')
 const path = require('path')
-const uuid = require('uuid').v4
+const { v4: uuidv4 } = require('uuid');
 class Course {
     constructor (title, price, img){
         this.title = title,
         this.price = price,
         this.img = img,
-        this.id = uuid
+        this.id = uuidv4()        
     }
 
     toJSON() {
@@ -52,6 +52,11 @@ class Course {
             )
         })
         
+    }
+
+    static  async getById(id) {
+        const courses = await Course.getAll()
+        return courses.find(c => c.id === id)
     }
 }
 
